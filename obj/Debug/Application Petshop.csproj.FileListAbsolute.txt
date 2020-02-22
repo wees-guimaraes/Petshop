@@ -1,0 +1,17 @@
+D:\Programação\Workspace\Petshop\bin\Debug\Application Petshop.exe.config
+D:\Programação\Workspace\Petshop\bin\Debug\Application Petshop.exe
+D:\Programação\Workspace\Petshop\bin\Debug\Application Petshop.pdb
+D:\Programação\Workspace\Petshop\bin\Debug\Google.Protobuf.dll
+D:\Programação\Workspace\Petshop\bin\Debug\Renci.SshNet.dll
+D:\Programação\Workspace\Petshop\bin\Debug\BouncyCastle.Crypto.dll
+D:\Programação\Workspace\Petshop\bin\Debug\MySql.Data.xml
+D:\Programação\Workspace\Petshop\obj\Debug\Application Petshop.csprojAssemblyReference.cache
+D:\Programação\Workspace\Petshop\obj\Debug\Petshop.formConsulta.resources
+D:\Programação\Workspace\Petshop\obj\Debug\Petshop.formOS.resources
+D:\Programação\Workspace\Petshop\obj\Debug\Petshop.formServico.resources
+D:\Programação\Workspace\Petshop\obj\Debug\Petshop.MainMenu.resources
+D:\Programação\Workspace\Petshop\obj\Debug\Application_Petshop.Properties.Resources.resources
+D:\Programação\Workspace\Petshop\obj\Debug\Application Petshop.csproj.GenerateResource.cache
+D:\Programação\Workspace\Petshop\obj\Debug\Application Petshop.csproj.CopyComplete
+D:\Programação\Workspace\Petshop\obj\Debug\Application Petshop.exe
+D:\Programação\Workspace\Petshop\obj\Debug\Application Petshop.pdb
