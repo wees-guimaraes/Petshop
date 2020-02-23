@@ -24,8 +24,8 @@ namespace Petshop {
                 conector = new MySqlConnection("Persist Security Info=True; " +
                                                        "server=localhost;" +
                                                        "database=petshop_pi;" +
-                                                       "uid=root;" +
-                                                       "pwd=Killer00");
+                                                       "uid=root;";
+                                                       
 
 
 
