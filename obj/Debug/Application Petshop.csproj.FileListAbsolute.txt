@@ -15,3 +15,22 @@ D:\Programação\Workspace\Petshop\obj\Debug\Application Petshop.csproj.Generate
 D:\Programação\Workspace\Petshop\obj\Debug\Application Petshop.csproj.CopyComplete
 D:\Programação\Workspace\Petshop\obj\Debug\Application Petshop.exe
 D:\Programação\Workspace\Petshop\obj\Debug\Application Petshop.pdb
+C:\Users\HP\source\repos\Application Petshop\Petshop\bin\Debug\Application Petshop.exe.config
+C:\Users\HP\source\repos\Application Petshop\Petshop\bin\Debug\Application Petshop.exe
+C:\Users\HP\source\repos\Application Petshop\Petshop\bin\Debug\Application Petshop.pdb
+C:\Users\HP\source\repos\Application Petshop\Petshop\bin\Debug\MySql.Data.dll
+C:\Users\HP\source\repos\Application Petshop\Petshop\bin\Debug\Google.Protobuf.dll
+C:\Users\HP\source\repos\Application Petshop\Petshop\bin\Debug\Renci.SshNet.dll
+C:\Users\HP\source\repos\Application Petshop\Petshop\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\HP\source\repos\Application Petshop\Petshop\bin\Debug\MySql.Data.xml
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Application Petshop.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Petshop.formConsulta.resources
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Petshop.formOS.resources
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Petshop.formServico.resources
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Petshop.MainMenu.resources
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Application_Petshop.Properties.Resources.resources
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Application Petshop.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Application Petshop.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Application Petshop.csproj.CopyComplete
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Application Petshop.exe
+C:\Users\HP\source\repos\Application Petshop\Petshop\obj\Debug\Application Petshop.pdb
