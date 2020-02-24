@@ -28,16 +28,18 @@ namespace Petshop {
                 try {
 
 
-                    control.registrarServico(txtDescrServ.Text, double.Parse(txtValorServ.Text));
-                    if (control.getMensagem() != "") {
-                        MessageBox.Show(control.getMensagem());
-                    } else {
+                    if (control.registrarServico(txtDescrServ.Text, double.Parse(txtValorServ.Text))) {
+
                         txtDescrServ.Text = "";
                         txtValorServ.Text = "";
                         txtIdServ.Text = "";
 
                         MessageBox.Show("Serviço registrado com sucesso!");
                         dataGridViewServ.DataSource = control.exibirServicos();
+                       
+                    } else {
+                        MessageBox.Show(control.getMensagem());
+
                     }
 
                 } catch (Exception) {

@@ -150,21 +150,68 @@ namespace Petshop {
 
         //Inserir Serviço
 
-        public void registrarServico(String descr, double valorServ) {
+        public bool registrarServico(String descr, double valorServ) {
+
+            try {
+             
+                
+            ////////////////////////////////////////////////
+
+            int idAnterior;
+            int idPosterior;
+
+            query = "select idServ from Servico;";
+
+            cmd = new MySqlCommand(query, conexao.conectar());
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+
+            idAnterior = int.Parse(reader["idServ"].ToString());
+
+
+                ////////////////////////////////////////////////
+
             cmd.CommandText = "INSERT INTO servico (descr, valorServ, flag) values (@descr, @valorServ, @flag)";
             cmd.Parameters.AddWithValue("@descr", descr);
             cmd.Parameters.AddWithValue("@valorServ", valorServ);
             cmd.Parameters.AddWithValue("@flag", "Ativo");
+            cmd.Connection = conexao.conectar();
+            cmd.ExecuteNonQuery();
 
-            try {
-                cmd.Connection = conexao.conectar();
-                cmd.ExecuteNonQuery();
+
+
+                ////////////////////////
+
+                query = "select Max(idServ) idServ from Servico;";
+
+            cmd = new MySqlCommand(query, conexao.conectar());
+            MySqlDataReader reader2 = cmd.ExecuteReader();
+            reader2.Read();
+
+
+            idPosterior = int.Parse(reader2["idServ"].ToString());
+
+                ////////////////////////
+
                 conexao.desconectar();
+
+                if (idPosterior > idAnterior) return true;
+
+                else {
+                    setMensagem("Foi encontrado uma falha no teste.");
+                    return false;
+
+                }
+
 
             } catch (MySqlException e) {
                 setMensagem("Falha de conexão com o banco: \n" + e);
+                return false;
+                
 
             }
+
+            
 
         }
 
@@ -465,6 +512,41 @@ namespace Petshop {
                 setMensagem("Erro ao executar o comando! \n\n" + e);
             }
         }
+
+
+        // PI - Semestre 4
+
+        public bool TestID() {
+
+            int idAnterior;
+            int idPosterior;
+
+            query = "select idServ from Servico;";
+
+            cmd = new MySqlCommand(query, conexao.conectar());
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+
+            idAnterior = int.Parse(reader["idServ"].ToString());
+
+
+            query = "select Max(idServ) from Servico;";
+
+            cmd = new MySqlCommand(query, conexao.conectar());
+            MySqlDataReader reader2 = cmd.ExecuteReader();
+            reader.Read();
+
+            idPosterior = int.Parse(reader2["idServ"].ToString());
+
+            if (idPosterior > idAnterior) return true;
+
+            else return false;
+
+        }
+
+
+
+
 
 
 
