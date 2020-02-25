@@ -19,10 +19,18 @@ namespace Petshop {
         private double valor;
         private String query;
         private String mensagem = "";
+        private DataTable dtService = new DataTable();
 
 
 
         //Acessores:
+
+        public DataTable getDtService() {
+            return this.dtService;
+        }
+        public void setDtService(DataTable dtService) {
+            this.dtService = dtService;
+        }
 
         public String getNome() {
             return this.nome;
@@ -56,6 +64,8 @@ namespace Petshop {
         public DataSet ds = new DataSet();
         MySqlDataAdapter dataAdapter;
         DataTable table = new DataTable();
+
+
 
 
 
@@ -150,7 +160,7 @@ namespace Petshop {
 
         //Inserir Serviço
 
-        public bool registrarServico(String descr, double valorServ) {
+        public Boolean registrarServico(String descr, double valorServ) {
 
             try {
              
@@ -218,16 +228,17 @@ namespace Petshop {
 
 
         //Exibir Serviços
-        public DataTable exibirServicos() {
-            DataTable dt = new DataTable();
+        public Boolean exibirServicos() {
+            
 
             try {
-                dataAdapter = new MySqlDataAdapter("SELECT * FROM servico where flag = 'Ativo' ORDER BY descr", conexao.conectar());
+                dataAdapter = new MySqlDataAdapter("SELECT * FROM servico where flag = 'Ativo' ORDER BY descr", 
+                    conexao.conectar());
 
-                dataAdapter.Fill(dt);
+                dataAdapter.Fill(getDtService());
 
 
-                return dt;
+                return true;
 
             } catch (MySqlException e) {
                 setMensagem("Falha de conexão" + e);

@@ -62,7 +62,10 @@ namespace Petshop {
             if (txtConsServ.Text == "")
 
                 try {
-                    dataGridViewServ.DataSource = control.exibirServicos();
+                    if (control.exibirServicos()) {
+                        dataGridViewServ.DataSource = control.getDtService();
+                    }
+
 
                 } catch (Exception erro) {
                     MessageBox.Show("Erro ao consultar" + erro);
