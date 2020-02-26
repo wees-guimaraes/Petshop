@@ -79,10 +79,10 @@ INSERT INTO CLIENTE(cpf, nomeCli, telCel, email, idEnd) VALUES (55511122234, 'Te
 
 INSERT INTO ANIMAL(nomeAni, porte, cor, raca) VALUES ('Thor', 'Pequeno', 'Marrom', 'Pinscher');
 
-INSERT INTO ANIMALxCLIENTE(cpf, idAni) VALUES (42684257809, 1);
+INSERT INTO ANIMALxCLIENTE(cpf, idAni) VALUES (55511122234, 1);
 
 INSERT INTO SERVICO VALUES (default, 'Lavagem de orelhas', 35.00, 'Ativo');
 
-INSERT INTO OS(dataOS, cpf, idAni, valorTotal) VALUES (DATE '2019-11-12', 48462167809, 1, 100.00);
+INSERT INTO OS(dataOS, cpf, idAni, valorTotal) VALUES (DATE '2019-11-12', 55511122234, 1, 100.00);
 
 INSERT INTO ITEM(idOS, idServ, valorItem) VALUES (1, 1, 100.00);
