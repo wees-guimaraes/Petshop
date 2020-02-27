@@ -35,8 +35,10 @@ namespace Petshop {
                         txtIdServ.Text = "";
 
                         MessageBox.Show("Serviço registrado com sucesso!");
-                        dataGridViewServ.DataSource = control.exibirServicos();
-                       
+                        control.exibirServicos();
+                        dataGridViewServ.DataSource = control.getDtService();
+
+
                     } else {
                         MessageBox.Show(control.getMensagem());
 
@@ -111,7 +113,8 @@ namespace Petshop {
 
                     Controller control = new Controller();
                     control.deletarServico(int.Parse(txtIdServ.Text));
-                    dataGridViewServ.DataSource = control.exibirServicos();
+                    control.exibirServicos();
+                    dataGridViewServ.DataSource = control.getDtService();
 
                     txtDescrServ.Text = "";
                     txtValorServ.Text = "";
@@ -134,7 +137,8 @@ namespace Petshop {
 
 
                         control.editarServico(txtDescrServ.Text, double.Parse(txtValorServ.Text), int.Parse(txtIdServ.Text));
-                        dataGridViewServ.DataSource = control.exibirServicos();
+                        control.exibirServicos();
+                        dataGridViewServ.DataSource = control.getDtService();
 
                         txtDescrServ.Text = "";
                         txtValorServ.Text = "";

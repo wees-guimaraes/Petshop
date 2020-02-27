@@ -35,6 +35,12 @@
             this.lbValorServ = new System.Windows.Forms.Label();
             this.txtValorServ = new System.Windows.Forms.TextBox();
             this.dataGridViewServ = new System.Windows.Forms.DataGridView();
+            this.IDServ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Serv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorServ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EditarServ = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ExcluirServ = new System.Windows.Forms.DataGridViewImageColumn();
+            this.flag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btConsServ = new System.Windows.Forms.PictureBox();
             this.btIncServ = new System.Windows.Forms.PictureBox();
             this.txtConsServ = new System.Windows.Forms.TextBox();
@@ -42,12 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtIdServ = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.IDServ = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Serv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorServ = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EditarServ = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ExcluirServ = new System.Windows.Forms.DataGridViewImageColumn();
-            this.flag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btConsServ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btIncServ)).BeginInit();
@@ -163,6 +163,68 @@
             this.dataGridViewServ.Visible = false;
             this.dataGridViewServ.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewServ_CellClick);
             // 
+            // IDServ
+            // 
+            this.IDServ.DataPropertyName = "idServ";
+            this.IDServ.HeaderText = "ID";
+            this.IDServ.MinimumWidth = 6;
+            this.IDServ.Name = "IDServ";
+            this.IDServ.ReadOnly = true;
+            this.IDServ.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.IDServ.Visible = false;
+            // 
+            // Serv
+            // 
+            this.Serv.DataPropertyName = "descr";
+            this.Serv.FillWeight = 165.2862F;
+            this.Serv.HeaderText = "Serviço";
+            this.Serv.MinimumWidth = 8;
+            this.Serv.Name = "Serv";
+            this.Serv.ReadOnly = true;
+            this.Serv.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // ValorServ
+            // 
+            this.ValorServ.DataPropertyName = "valorServ";
+            this.ValorServ.FillWeight = 106.9519F;
+            this.ValorServ.HeaderText = "Valor";
+            this.ValorServ.MinimumWidth = 6;
+            this.ValorServ.Name = "ValorServ";
+            this.ValorServ.ReadOnly = true;
+            this.ValorServ.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // EditarServ
+            // 
+            this.EditarServ.FillWeight = 59.62226F;
+            this.EditarServ.HeaderText = "Editar";
+            this.EditarServ.Image = ((System.Drawing.Image)(resources.GetObject("EditarServ.Image")));
+            this.EditarServ.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.EditarServ.MinimumWidth = 8;
+            this.EditarServ.Name = "EditarServ";
+            this.EditarServ.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ExcluirServ
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe MDL2 Assets", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.NullValue = null;
+            this.ExcluirServ.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ExcluirServ.FillWeight = 68.13972F;
+            this.ExcluirServ.HeaderText = "Excluir";
+            this.ExcluirServ.Image = ((System.Drawing.Image)(resources.GetObject("ExcluirServ.Image")));
+            this.ExcluirServ.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.ExcluirServ.MinimumWidth = 8;
+            this.ExcluirServ.Name = "ExcluirServ";
+            this.ExcluirServ.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // flag
+            // 
+            this.flag.DataPropertyName = "flag";
+            this.flag.HeaderText = "flag";
+            this.flag.MinimumWidth = 6;
+            this.flag.Name = "flag";
+            this.flag.Visible = false;
+            // 
             // btConsServ
             // 
             this.btConsServ.BackColor = System.Drawing.Color.Transparent;
@@ -250,68 +312,6 @@
             this.label2.Size = new System.Drawing.Size(156, 25);
             this.label2.TabIndex = 32;
             this.label2.Text = "Buscar serviços:";
-            // 
-            // IDServ
-            // 
-            this.IDServ.DataPropertyName = "idServ";
-            this.IDServ.HeaderText = "ID";
-            this.IDServ.MinimumWidth = 6;
-            this.IDServ.Name = "IDServ";
-            this.IDServ.ReadOnly = true;
-            this.IDServ.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.IDServ.Visible = false;
-            // 
-            // Serv
-            // 
-            this.Serv.DataPropertyName = "descr";
-            this.Serv.FillWeight = 165.2862F;
-            this.Serv.HeaderText = "Serviço";
-            this.Serv.MinimumWidth = 8;
-            this.Serv.Name = "Serv";
-            this.Serv.ReadOnly = true;
-            this.Serv.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // ValorServ
-            // 
-            this.ValorServ.DataPropertyName = "valorServ";
-            this.ValorServ.FillWeight = 106.9519F;
-            this.ValorServ.HeaderText = "Valor";
-            this.ValorServ.MinimumWidth = 6;
-            this.ValorServ.Name = "ValorServ";
-            this.ValorServ.ReadOnly = true;
-            this.ValorServ.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // EditarServ
-            // 
-            this.EditarServ.FillWeight = 59.62226F;
-            this.EditarServ.HeaderText = "Editar";
-            this.EditarServ.Image = ((System.Drawing.Image)(resources.GetObject("EditarServ.Image")));
-            this.EditarServ.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.EditarServ.MinimumWidth = 8;
-            this.EditarServ.Name = "EditarServ";
-            this.EditarServ.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ExcluirServ
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe MDL2 Assets", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.NullValue = null;
-            this.ExcluirServ.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ExcluirServ.FillWeight = 68.13972F;
-            this.ExcluirServ.HeaderText = "Excluir";
-            this.ExcluirServ.Image = ((System.Drawing.Image)(resources.GetObject("ExcluirServ.Image")));
-            this.ExcluirServ.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.ExcluirServ.MinimumWidth = 8;
-            this.ExcluirServ.Name = "ExcluirServ";
-            this.ExcluirServ.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // flag
-            // 
-            this.flag.DataPropertyName = "flag";
-            this.flag.HeaderText = "flag";
-            this.flag.MinimumWidth = 6;
-            this.flag.Name = "flag";
-            this.flag.Visible = false;
             // 
             // formServico
             // 
