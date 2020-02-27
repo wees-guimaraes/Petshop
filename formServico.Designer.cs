@@ -59,9 +59,10 @@
             this.lbDescrServ.BackColor = System.Drawing.Color.Transparent;
             this.lbDescrServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDescrServ.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lbDescrServ.Location = new System.Drawing.Point(495, 38);
+            this.lbDescrServ.Location = new System.Drawing.Point(371, 31);
+            this.lbDescrServ.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDescrServ.Name = "lbDescrServ";
-            this.lbDescrServ.Size = new System.Drawing.Size(105, 25);
+            this.lbDescrServ.Size = new System.Drawing.Size(84, 20);
             this.lbDescrServ.TabIndex = 18;
             this.lbDescrServ.Text = "Descrição:";
             // 
@@ -69,10 +70,9 @@
             // 
             this.txtDescrServ.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtDescrServ.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescrServ.Location = new System.Drawing.Point(613, 41);
-            this.txtDescrServ.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescrServ.Location = new System.Drawing.Point(460, 33);
             this.txtDescrServ.Name = "txtDescrServ";
-            this.txtDescrServ.Size = new System.Drawing.Size(311, 28);
+            this.txtDescrServ.Size = new System.Drawing.Size(234, 24);
             this.txtDescrServ.TabIndex = 17;
             // 
             // lbValorServ
@@ -81,19 +81,19 @@
             this.lbValorServ.BackColor = System.Drawing.Color.Transparent;
             this.lbValorServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbValorServ.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lbValorServ.Location = new System.Drawing.Point(540, 105);
+            this.lbValorServ.Location = new System.Drawing.Point(405, 85);
+            this.lbValorServ.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbValorServ.Name = "lbValorServ";
-            this.lbValorServ.Size = new System.Drawing.Size(64, 25);
+            this.lbValorServ.Size = new System.Drawing.Size(50, 20);
             this.lbValorServ.TabIndex = 21;
             this.lbValorServ.Text = "Valor:";
             // 
             // txtValorServ
             // 
             this.txtValorServ.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtValorServ.Location = new System.Drawing.Point(613, 107);
-            this.txtValorServ.Margin = new System.Windows.Forms.Padding(4);
+            this.txtValorServ.Location = new System.Drawing.Point(460, 87);
             this.txtValorServ.Name = "txtValorServ";
-            this.txtValorServ.Size = new System.Drawing.Size(65, 22);
+            this.txtValorServ.Size = new System.Drawing.Size(50, 20);
             this.txtValorServ.TabIndex = 20;
             // 
             // dataGridViewServ
@@ -137,8 +137,7 @@
             this.dataGridViewServ.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewServ.EnableHeadersVisualStyles = false;
             this.dataGridViewServ.GridColor = System.Drawing.Color.Black;
-            this.dataGridViewServ.Location = new System.Drawing.Point(500, 289);
-            this.dataGridViewServ.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewServ.Location = new System.Drawing.Point(375, 235);
             this.dataGridViewServ.MultiSelect = false;
             this.dataGridViewServ.Name = "dataGridViewServ";
             this.dataGridViewServ.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -158,7 +157,7 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.PaleTurquoise;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.MediumBlue;
             this.dataGridViewServ.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewServ.Size = new System.Drawing.Size(549, 165);
+            this.dataGridViewServ.Size = new System.Drawing.Size(412, 134);
             this.dataGridViewServ.TabIndex = 22;
             this.dataGridViewServ.Visible = false;
             this.dataGridViewServ.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewServ_CellClick);
@@ -230,10 +229,9 @@
             this.btConsServ.BackColor = System.Drawing.Color.Transparent;
             this.btConsServ.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btConsServ.Image = ((System.Drawing.Image)(resources.GetObject("btConsServ.Image")));
-            this.btConsServ.Location = new System.Drawing.Point(1319, 41);
-            this.btConsServ.Margin = new System.Windows.Forms.Padding(4);
+            this.btConsServ.Location = new System.Drawing.Point(989, 33);
             this.btConsServ.Name = "btConsServ";
-            this.btConsServ.Size = new System.Drawing.Size(31, 31);
+            this.btConsServ.Size = new System.Drawing.Size(23, 25);
             this.btConsServ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btConsServ.TabIndex = 23;
             this.btConsServ.TabStop = false;
@@ -244,10 +242,10 @@
             this.btIncServ.BackColor = System.Drawing.Color.Transparent;
             this.btIncServ.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btIncServ.Image = ((System.Drawing.Image)(resources.GetObject("btIncServ.Image")));
-            this.btIncServ.Location = new System.Drawing.Point(916, 110);
-            this.btIncServ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btIncServ.Location = new System.Drawing.Point(687, 90);
+            this.btIncServ.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btIncServ.Name = "btIncServ";
-            this.btIncServ.Size = new System.Drawing.Size(32, 33);
+            this.btIncServ.Size = new System.Drawing.Size(24, 27);
             this.btIncServ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btIncServ.TabIndex = 27;
             this.btIncServ.TabStop = false;
@@ -257,10 +255,9 @@
             // 
             this.txtConsServ.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtConsServ.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtConsServ.Location = new System.Drawing.Point(1149, 43);
-            this.txtConsServ.Margin = new System.Windows.Forms.Padding(4);
+            this.txtConsServ.Location = new System.Drawing.Point(862, 35);
             this.txtConsServ.Name = "txtConsServ";
-            this.txtConsServ.Size = new System.Drawing.Size(145, 22);
+            this.txtConsServ.Size = new System.Drawing.Size(110, 20);
             this.txtConsServ.TabIndex = 28;
             this.txtConsServ.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -270,9 +267,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Location = new System.Drawing.Point(597, 224);
+            this.label5.Location = new System.Drawing.Point(448, 182);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(336, 39);
+            this.label5.Size = new System.Drawing.Size(269, 31);
             this.label5.TabIndex = 29;
             this.label5.Text = "Serviços disponíveis:";
             this.label5.Visible = false;
@@ -283,9 +281,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(1100, 107);
+            this.label1.Location = new System.Drawing.Point(825, 87);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 25);
+            this.label1.Size = new System.Drawing.Size(30, 20);
             this.label1.TabIndex = 31;
             this.label1.Text = "ID:";
             this.label1.Visible = false;
@@ -293,11 +292,10 @@
             // txtIdServ
             // 
             this.txtIdServ.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtIdServ.Location = new System.Drawing.Point(1149, 110);
-            this.txtIdServ.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdServ.Location = new System.Drawing.Point(862, 90);
             this.txtIdServ.Name = "txtIdServ";
             this.txtIdServ.ReadOnly = true;
-            this.txtIdServ.Size = new System.Drawing.Size(65, 22);
+            this.txtIdServ.Size = new System.Drawing.Size(50, 20);
             this.txtIdServ.TabIndex = 30;
             this.txtIdServ.Visible = false;
             // 
@@ -307,20 +305,21 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label2.Location = new System.Drawing.Point(975, 41);
+            this.label2.Location = new System.Drawing.Point(731, 33);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 25);
+            this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 32;
             this.label2.Text = "Buscar serviços:";
             // 
             // formServico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1395, 738);
+            this.ClientSize = new System.Drawing.Size(1300, 738);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtIdServ);
@@ -334,7 +333,6 @@
             this.Controls.Add(this.lbDescrServ);
             this.Controls.Add(this.txtDescrServ);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formServico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServ)).EndInit();

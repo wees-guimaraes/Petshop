@@ -135,16 +135,23 @@ namespace Petshop {
                     Controller control = new Controller();
                     try {
 
+                        if (control.editarServico(txtDescrServ.Text, double.Parse(txtValorServ.Text), int.Parse(txtIdServ.Text)))
+                        {
 
-                        control.editarServico(txtDescrServ.Text, double.Parse(txtValorServ.Text), int.Parse(txtIdServ.Text));
-                        control.exibirServicos();
-                        dataGridViewServ.DataSource = control.getDtService();
+                            control.exibirServicos();
+                            dataGridViewServ.DataSource = control.getDtService();
 
-                        txtDescrServ.Text = "";
-                        txtValorServ.Text = "";
-                        txtIdServ.Text = "";
+                            txtDescrServ.Text = "";
+                            txtValorServ.Text = "";
+                            txtIdServ.Text = "";
 
-                        MessageBox.Show("Serviço alterado com sucesso!");
+                            MessageBox.Show("Serviço alterado com sucesso!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Serviço não alterado!");
+                        }
+
                     } catch (Exception) {
                         MessageBox.Show("Informe o valor");
                     }

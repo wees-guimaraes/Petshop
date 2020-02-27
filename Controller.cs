@@ -293,10 +293,27 @@ namespace Petshop {
 
         //Editar Serviços
 
-        public void editarServico(String descr, double valorServ, int id) {
+        public Boolean editarServico(String descr, double valorServ, int id) {
             try {
                 Conexao conexao = new Conexao();
 
+                string descrAnterior;
+                string descrPosterior;
+                double valorAnterior;
+                double valorPosterior;
+                int idServ;
+
+                query = "select s.idServ, s.descr, s.valorServ from servico s where s.descr = ' " + descr + " ' and s.flag = 'Ativo'; ";
+
+                cmd = new MySqlCommand(query, conexao.conectar());
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+
+                idServ = int.Parse(reader["idServ"].ToString());
+                descrAnterior = reader["descr"].ToString();
+                valorAnterior = double.Parse(reader["valorServ"].ToString());
+
+                ////////////
 
                 cmd.CommandText = "UPDATE servico SET descr = @descr, valorServ = @valorServ WHERE idServ = @id";
 
@@ -307,11 +324,29 @@ namespace Petshop {
                 cmd.Connection = conexao.conectar();
                 cmd.ExecuteNonQuery();
 
+                query = "select s.descr, s.valorServ from servico s where s.idServ = " + idServ + ";";
 
-                conexao.desconectar();
-                setMensagem("Comando reaizado com sucesso!");
+                cmd = new MySqlCommand(query, conexao.conectar());
+                MySqlDataReader reader2 = cmd.ExecuteReader();
+                reader2.Read();
 
-            } catch (MySqlException e) {
+                descrPosterior = reader2["descr"].ToString();
+                valorPosterior = double.Parse(reader2["valorServ"].ToString());
+
+                if (descrAnterior != descrPosterior || valorAnterior != valorPosterior)
+                {
+                    conexao.desconectar();
+                    return true;
+                }
+
+                else
+                {
+                    conexao.desconectar();
+                    return false;
+                }
+
+                
+               } catch (MySqlException e) {
                 setMensagem("Falha de conexão");
                 throw e;
 
