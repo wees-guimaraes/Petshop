@@ -135,8 +135,8 @@ namespace Petshop {
                     Controller control = new Controller();
                     try {
 
-                        if (control.editarServico(txtDescrServ.Text, double.Parse(txtValorServ.Text), int.Parse(txtIdServ.Text)))
-                        {
+                        String descrAnterior = row.Cells["Serv"].Value.ToString();
+                        if (control.editarServico(descrAnterior, txtDescrServ.Text, double.Parse(txtValorServ.Text), int.Parse(txtIdServ.Text))){
 
                             control.exibirServicos();
                             dataGridViewServ.DataSource = control.getDtService();
@@ -144,6 +144,7 @@ namespace Petshop {
                             txtDescrServ.Text = "";
                             txtValorServ.Text = "";
                             txtIdServ.Text = "";
+
 
                             MessageBox.Show("Serviço alterado com sucesso!");
                         }

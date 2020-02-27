@@ -293,7 +293,7 @@ namespace Petshop {
 
         //Editar Serviços
 
-        public Boolean editarServico(String descr, double valorServ, int id) {
+        public Boolean editarServico(String descAnterior, String descr, double valorServ, int id) {
             try {
                 Conexao conexao = new Conexao();
 
@@ -303,8 +303,7 @@ namespace Petshop {
                 double valorPosterior;
                 int idServ;
 
-                query = "select s.idServ, s.descr, s.valorServ from servico s where s.descr = ' " + descr + " ' and s.flag = 'Ativo'; ";
-
+                query = "select s.idServ, s.descr, s.valorServ from servico s where s.descr = '" + descAnterior + "' and s.flag = 'Ativo'; ";
                 cmd = new MySqlCommand(query, conexao.conectar());
                 MySqlDataReader reader = cmd.ExecuteReader();
                 reader.Read();
@@ -312,7 +311,7 @@ namespace Petshop {
                 idServ = int.Parse(reader["idServ"].ToString());
                 descrAnterior = reader["descr"].ToString();
                 valorAnterior = double.Parse(reader["valorServ"].ToString());
-
+                
                 ////////////
 
                 cmd.CommandText = "UPDATE servico SET descr = @descr, valorServ = @valorServ WHERE idServ = @id";
@@ -333,8 +332,7 @@ namespace Petshop {
                 descrPosterior = reader2["descr"].ToString();
                 valorPosterior = double.Parse(reader2["valorServ"].ToString());
 
-                if (descrAnterior != descrPosterior || valorAnterior != valorPosterior)
-                {
+                if (descrAnterior != descrPosterior || valorAnterior != valorPosterior){
                     conexao.desconectar();
                     return true;
                 }
