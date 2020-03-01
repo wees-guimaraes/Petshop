@@ -73,15 +73,36 @@ PRIMARY KEY (idOS, idServ)
 
 SHOW TABLES;
 
-INSERT INTO ENDERECO(rua, numero, bairro, cidade, estado, cep) VALUES ('Rua dos Vianas', '171', 'Bairro Amorim', 'Cidade São Paulo', 'SP', 09391001);
+INSERT INTO ENDERECO(rua, numero, bairro, cidade, estado, cep) 
+VALUES 
+('Rua dos Vianas',
+ '171', 'Bairro Amorim',
+ 'Cidade São Paulo', 
+ 'SP',
+ 09391001);
 
-INSERT INTO CLIENTE(cpf, nomeCli, telCel, email, idEnd) VALUES (55511122234, 'Teste', '999330099', 'teste@gmail.com', 1);
+INSERT INTO CLIENTE VALUES (42684257809, 'Wesley Guimarães',null, '999330099', 'wees.guimaraes@gmail.com', 1), 
+(36451328804,'Patricia Paixão',null ,9999999999, 'patricia@gmail.com', 1),
+(48462167809, 'Gabriel Perillo', null, 948557845, 'gabriel.perillo2011@gmail.com', 1),
+(47594150848, 'Henrique Silva Antonio', null, 988888888, 'henriantonio@live.com', 1),
+(22179153805, 'Rodrigo da Col Gil', null, 985325205, 'roddacol@gmail.com', 1);
 
-INSERT INTO ANIMAL(nomeAni, porte, cor, raca) VALUES ('Thor', 'Pequeno', 'Marrom', 'Pinscher');
+INSERT INTO ANIMAL VALUES ('Thor', 'Pequeno', 'Marrom', 'Pinscher'),
+('Max', 'Pequeno', 'Marrom', 'Yorkshire'),
+('Stark', 'Médio', 'Branco', 'Pitbull'),
+('Stev', 'Médio', 'Preto', 'Lessie'),
+('Miojo', 'Pequeno', 'Cinza', 'Unknown');
 
-INSERT INTO ANIMALxCLIENTE(cpf, idAni) VALUES (55511122234, 1);
+INSERT INTO ANIMALxCLIENTE VALUES (55511122234, 1),
+(42684257809, 2),
+(48462167809, 3),
+(47594150848, 4),
+(22179153805, 5);
 
-INSERT INTO SERVICO VALUES (default, 'Lavagem de orelhas', 35.00, 'Ativo');
+INSERT INTO SERVICO VALUES (default, 'Banho', 20.00, 'Ativo'),
+(default, 'Tosa', 30.00, 'Ativo'),
+(default, 'Banho & Tosa', 50.00, 'Ativo'),
+(default, 'Cortar unha', 15.00, 'Ativo');
 
 INSERT INTO OS(dataOS, cpf, idAni, valorTotal) VALUES (DATE '2019-11-12', 55511122234, 1, 100.00);
 
