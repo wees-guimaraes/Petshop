@@ -87,14 +87,14 @@ INSERT INTO CLIENTE VALUES (42684257809, 'Wesley Guimarães',null, '999330099', 
 (47594150848, 'Henrique Silva Antonio', null, 988888888, 'henriantonio@live.com', 1),
 (22179153805, 'Rodrigo da Col Gil', null, 985325205, 'roddacol@gmail.com', 1);
 
-INSERT INTO ANIMAL VALUES ('Thor', 'Pequeno', 'Marrom', 'Pinscher'),
-('Max', 'Pequeno', 'Marrom', 'Yorkshire'),
-('Stark', 'Médio', 'Branco', 'Pitbull'),
-('Stev', 'Médio', 'Preto', 'Lessie'),
-('Miojo', 'Pequeno', 'Cinza', 'Unknown');
+INSERT INTO ANIMAL VALUES (default, 'Thor', 'Pequeno', 'Marrom', 'Pinscher'),
+(default, 'Max', 'Pequeno', 'Marrom', 'Yorkshire'),
+(default, 'Stark', 'Médio', 'Branco', 'Pitbull'),
+(default, 'Stev', 'Médio', 'Preto', 'Lessie'),
+(default, 'Miojo', 'Pequeno', 'Cinza', 'Unknown');
 
-INSERT INTO ANIMALxCLIENTE VALUES (55511122234, 1),
-(42684257809, 2),
+INSERT INTO ANIMALxCLIENTE VALUES (42684257809, 1),
+(36451328804, 2),
 (48462167809, 3),
 (47594150848, 4),
 (22179153805, 5);
@@ -104,6 +104,4 @@ INSERT INTO SERVICO VALUES (default, 'Banho', 20.00, 'Ativo'),
 (default, 'Banho & Tosa', 50.00, 'Ativo'),
 (default, 'Cortar unha', 15.00, 'Ativo');
 
-INSERT INTO OS(dataOS, cpf, idAni, valorTotal) VALUES (DATE '2019-11-12', 55511122234, 1, 100.00);
-
-INSERT INTO ITEM(idOS, idServ, valorItem) VALUES (1, 1, 100.00);
+show tables;
