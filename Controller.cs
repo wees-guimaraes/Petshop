@@ -276,8 +276,18 @@ namespace Petshop {
 
         //Deletar Serviços
 
-        public void deletarServico(int id) {
+        public Boolean deletarServico(int id) {
             try {
+
+                int idAnterior, validador;
+
+                query = "select idServ from Servico;";
+
+                cmd = new MySqlCommand(query, conexao.conectar());
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+
+                idAnterior = int.Parse(reader["idServ"].ToString());
 
                 cmd.Connection = conexao.conectar();
                 cmd.Parameters.AddWithValue("@id", id);
@@ -285,9 +295,27 @@ namespace Petshop {
                 cmd.ExecuteNonQuery();
                 cmd.Connection = conexao.desconectar();
                 setMensagem("Comando realizado com Sucesso!");
-            } catch (MySqlException) {
-                MessageBox.Show("Não é possível excluir serviço");
+
+                query = "select COUNT(idServ) qtd FROM Servico WHERE idServ = '" + idAnterior + "' and flag = 'Excluído';";
+
+                cmd = new MySqlCommand(query, conexao.conectar());
+                MySqlDataReader reader2 = cmd.ExecuteReader();
+                reader2.Read();
+
+                validador = int.Parse(reader2["qtd"].ToString());
+
+                if (validador > 0) return true;
+
+                else return false;
+
+
             }
+            catch (MySqlException) {
+                MessageBox.Show("Não é possível excluir serviço");
+                return false;
+
+            }
+
         }
 
 
