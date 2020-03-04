@@ -281,7 +281,7 @@ namespace Petshop {
 
                 int idAnterior, validador;
 
-                query = "select idServ from Servico;";
+                query = "select idServ from Servico WHERE idServ = '" + id + "';";
 
                 cmd = new MySqlCommand(query, conexao.conectar());
                 MySqlDataReader reader = cmd.ExecuteReader();
