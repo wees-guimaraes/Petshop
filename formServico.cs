@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
 namespace Petshop {
     public partial class formServico : Form {
 
@@ -54,6 +53,8 @@ namespace Petshop {
         private void BtConsServ_Click(object sender, EventArgs e) {
 
             Controller control = new Controller();
+            control.retornaUltimoId();
+            
 
             if (dataGridViewServ.Visible == false) {
                 label5.Visible = true;

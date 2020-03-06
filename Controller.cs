@@ -170,13 +170,13 @@ namespace Petshop {
             int idAnterior;
             int idPosterior;
 
-            query = "select idServ from Servico;";
+            query = "select Max(idServ) id from Servico;";
 
             cmd = new MySqlCommand(query, conexao.conectar());
             MySqlDataReader reader = cmd.ExecuteReader();
             reader.Read();
 
-            idAnterior = int.Parse(reader["idServ"].ToString());
+            idAnterior = int.Parse(reader["id"].ToString());
 
 
                 ////////////////////////////////////////////////
@@ -204,8 +204,9 @@ namespace Petshop {
                 ////////////////////////
 
                 conexao.desconectar();
+                idAnterior++;
 
-                if (idPosterior > idAnterior) return true;
+                if (idPosterior == idAnterior) return true;
 
                 else {
                     setMensagem("Foi encontrado uma falha no teste.");
@@ -378,6 +379,24 @@ namespace Petshop {
 
             }
 
+        }
+
+        public int retornaUltimoId() {
+            int ultimoId;
+            Conexao conexao = new Conexao();
+            query = "Select Max(idServ) id from Servico;";
+            cmd = new MySqlCommand(query, conexao.conectar());
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            ultimoId = int.Parse(reader["id"].ToString());
+            return ultimoId;
+        }
+
+        public void limpaBanco() {
+            Conexao conexao = new Conexao();
+            query = "delete from servico where descr LIKE '%Teste%' OR descr = 'Serviço Inserido'";
+            cmd = new MySqlCommand(query, conexao.conectar());
+            cmd.ExecuteNonQuery();
         }
 
         //Gerar  OS
