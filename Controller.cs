@@ -163,8 +163,12 @@ namespace Petshop {
         public Boolean registrarServico(String descr, double valorServ) {
 
             try {
-             
-                
+
+                if (valorServ <= 0 || valorServ >= 500.0) {
+                    mensagem = "Valor inválido";
+                    return false;
+                }
+
             ////////////////////////////////////////////////
 
             int idAnterior;
@@ -189,7 +193,6 @@ namespace Petshop {
             cmd.ExecuteNonQuery();
 
 
-
                 ////////////////////////
 
                 query = "select Max(idServ) idServ from Servico;";
@@ -201,7 +204,6 @@ namespace Petshop {
 
             idPosterior = int.Parse(reader2["idServ"].ToString());
 
-                ////////////////////////
 
                 conexao.desconectar();
                 idAnterior++;
@@ -394,7 +396,7 @@ namespace Petshop {
 
         public void limpaBanco() {
             Conexao conexao = new Conexao();
-            query = "delete from servico where descr LIKE '%Teste%' OR descr = 'Serviço Inserido'";
+            query = "UPDATE servico SET flag = 'Excluído' WHERE descr LIKE '%Teste%' OR descr = 'Serviço Inserido'";
             cmd = new MySqlCommand(query, conexao.conectar());
             cmd.ExecuteNonQuery();
         }
