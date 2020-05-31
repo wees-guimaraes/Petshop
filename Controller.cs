@@ -326,6 +326,12 @@ namespace Petshop {
 
         public Boolean editarServico(String descAnterior, String descr, double valorServ, int id) {
             try {
+
+                if (valorServ <= 0 || valorServ >= 500.0) {
+                    mensagem = "Valor inválido";
+                    return false;
+                }
+
                 Conexao conexao = new Conexao();
 
                 string descrAnterior;

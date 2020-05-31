@@ -151,7 +151,7 @@ namespace Petshop {
                         }
                         else
                         {
-                            MessageBox.Show("Serviço não alterado!");
+                            MessageBox.Show(control.getMensagem());
                         }
 
                     } catch (Exception) {
