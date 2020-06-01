@@ -1,0 +1,18 @@
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Petshop.formConsulta.resources
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Petshop.formOS.resources
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Petshop.formServico.resources
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Petshop.MainMenu.resources
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Application_Petshop.Properties.Resources.resources
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Application Petshop.csproj.GenerateResource.cache
+C:\Users\gabri\source\repos\Application Petshop\Petshop\bin\Release\Application Petshop.exe.config
+C:\Users\gabri\source\repos\Application Petshop\Petshop\bin\Release\Application Petshop.exe
+C:\Users\gabri\source\repos\Application Petshop\Petshop\bin\Release\Application Petshop.pdb
+C:\Users\gabri\source\repos\Application Petshop\Petshop\bin\Release\MySql.Data.dll
+C:\Users\gabri\source\repos\Application Petshop\Petshop\bin\Release\Google.Protobuf.dll
+C:\Users\gabri\source\repos\Application Petshop\Petshop\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\gabri\source\repos\Application Petshop\Petshop\bin\Release\Renci.SshNet.dll
+C:\Users\gabri\source\repos\Application Petshop\Petshop\bin\Release\MySql.Data.xml
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Application Petshop.csprojAssemblyReference.cache
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Application Petshop.csproj.CopyComplete
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Application Petshop.exe
+C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Release\Application Petshop.pdb

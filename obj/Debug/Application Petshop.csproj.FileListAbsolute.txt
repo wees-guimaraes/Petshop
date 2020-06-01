@@ -85,3 +85,4 @@ C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Debug\Application Pe
 C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Debug\Application Petshop.csproj.CopyComplete
 C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Debug\Application Petshop.exe
 C:\Users\gabri\source\repos\Application Petshop\Petshop\obj\Debug\Application Petshop.pdb
+C:\Users\gabri\source\repos\Application Petshop\Petshop\bin\Debug\MySql.Data.dll

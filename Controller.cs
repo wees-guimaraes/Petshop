@@ -402,9 +402,11 @@ namespace Petshop {
 
         public void limpaBanco() {
             Conexao conexao = new Conexao();
-            query = "UPDATE servico SET flag = 'Excluído' WHERE descr LIKE '%Teste%' OR descr = 'Serviço Inserido'";
+            query = "UPDATE servico SET flag = 'Excluído' WHERE descr LIKE '%Teste%' OR descr LIKE '%Serviço%' OR descr LIKE '%Editando%'";
             cmd = new MySqlCommand(query, conexao.conectar());
             cmd.ExecuteNonQuery();
+
+
         }
 
         //Gerar  OS
